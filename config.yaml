@@ -244,7 +244,6 @@ params:
         url: https://codingcompetitions.withgoogle.com/hashcode
       - title: Hackathon \#1 EPITA
         content: Realization of an innovative project in team on the theme of the EAccessibility during 48 hours.
-        url: https://www.gottagohack.fr/
       - title: Unity Game Jam
         content: "Participation to the Unity First Game Jam : improvement of a game (1st place)"
 

@@ -206,6 +206,7 @@ params:
   
   association:
     enable: true
+    index: true
     title: "Associations"
     items:
       - job: "Prologin - Girls Can Code (GCC)"

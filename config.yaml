@@ -208,36 +208,28 @@ params:
     enable: true
     title: "Associations"
     items:
-      - job: "Prologin"
-        company: "Prologin"
+      - title: "Prologin"
         date: "Mars 2022 - present"
         companyUrl: "https://prologin.org"
         featuredLink:
           enable: true
           name: "Prologin"
           url: "https://prologin.org"
+        image: /images/prologin.png
         content: |
           I help prologin for :
           - organize the final
           - prepare the final
           - review the exercises of the contest
 
-      - job: "Atelier"
-        company: "Atelier"
-        date: "Sept 2022 - present"
-        companyUrl: "https://atelier.org"
-        featuredLink:
-          enable: false
-        content: "Member of l'Atelier an EPITA association"
-        
-      - job: "Girls Can Code! (GCC)"
-        company: "Girls Can Code"
+      - title: "Girls Can Code! (GCC)"
         date: "Mars 2022 - present"
         companyUrl: "https://girlscancode.fr"
         featuredLink:
           enable: true
           name: "Girls Can Code!"
           url: "https://girlscancode.fr"
+        image: /images/GCC.png
         content: |
           I help Girls Can Code! (GCC)
           - make a static website

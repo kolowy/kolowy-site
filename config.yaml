@@ -1,4 +1,4 @@
-baseURL: http://example.org/
+baseURL: https://kolowy.tk/
 
 languageCode: "en-us"
 title: "Paul Dufour"
@@ -173,7 +173,7 @@ params:
   # Education
   education:
     enable: true
-    index: false
+    index: true
     title: "School Project"
     items:
       - title: "Optical Character Recognition Sudoku Solver"
@@ -206,34 +206,53 @@ params:
   
   association:
     enable: true
-    index: true
     title: "Associations"
     items:
-      - job: "Prologin - Girls Can Code (GCC)"
-        company: "Volunteer"
+      - job: "Prologin"
+        company: "Prologin"
         date: "Mars 2022 - present"
         companyUrl: "https://prologin.org"
         featuredLink:
           enable: true
-          links:
-          - name: "Prologin"
-            url: "https://prologin.org"
-          - name: "Girls Can Code"
-            url: "https://prologin.org"
+          name: "Prologin"
+          url: "https://prologin.org"
         content: |
-          Help the association Prologin in the creation of the contest and the exercises for it. Also in the framework of the GCC,
-          - make a static website
-          - organize internships for girls
-          - improve the content of the gcc courses
-          - support for the development of the next GCC site
+          I help prologin for :
+          - organize the final
+          - prepare the final
+          - review the exercises of the contest
 
       - job: "Atelier"
-        company: "Volunteer"
+        company: "Atelier"
         date: "Sept 2022 - present"
         companyUrl: "https://atelier.org"
         featuredLink:
           enable: false
         content: "Member of l'Atelier an EPITA association"
+        
+      - job: "Girls Can Code! (GCC)"
+        company: "Prologin"
+        date: "Sept 2022 - present"
+        companyUrl: "https://atelier.org"
+        featuredLink:
+          enable: false
+        content: "Member of l'Atelier an EPITA association"
+
+      - job: "Girls Can Code! (GCC)"
+        company: "Girls Can Code"
+        date: "Mars 2022 - present"
+        companyUrl: "https://girlscancode.fr"
+        featuredLink:
+          enable: true
+          name: "Girls Can Code!"
+          url: "https://girlscancode.fr"
+        content: |
+          I help Girls Can Code! (GCC)
+          - make a static website
+          - organize internships for girls
+          - improve the content of the gcc courses
+          - support for the development of the next GCC site
+
 
   # Achievements
   achievements:

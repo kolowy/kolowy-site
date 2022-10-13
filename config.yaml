@@ -259,7 +259,7 @@ params:
     items:
       - title: Optical Character Recognition Sudoku Solver
         content: I am currently working on a Optical Character Recognition with 3 friends for an EPITA project.
-        # image: /images/avatar.png
+        image: /images/sudoku.png
         featured:
           name: Demo
         badges:
@@ -274,7 +274,7 @@ params:
 
       - title: Hugo Profile
         content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/avatar.png
+        image: /images/moi.png
         featured:
           name: Demo
         badges:

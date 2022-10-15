@@ -15,17 +15,23 @@ markup:
 
 Menus:
   main:
+    - identifier: Home
+      name: Home
+      title: Blog posts
+      url: /#
+      weight: 1
+
     - identifier: blog
       name: Blog
       title: Blog posts
       url: /blogs
-      weight: 1
+      weight: 2
 
     - identifier: gallery
       name: Gallery
       title: Blog posts
       url: /gallery
-      weight: 2
+      weight: 3
 
     #Dropdown menu
     # - identifier: dropdown
@@ -47,7 +53,7 @@ Menus:
 
 params:
   title: "Paul Dufour"
-  description: This is my personnal site
+  description: This is the personal website of Paul Dufour.
   # staticPath: ""  # The path to serve the static files from
   favicon: "/images/avatar.png"
 
@@ -98,7 +104,7 @@ params:
       disableEducation: true
       disableProjects: true
       disableAchievements: true
-      disableContact: false
+      disableContact: true
 
   # Hero
   hero:

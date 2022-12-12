@@ -141,7 +141,7 @@ params:
       title: "Stuff I like :"
       items:
         - "languages : C, C#, OCaml, ASM 68000, bash"
-        - "tools: git, vim, i3"
+        - "tools: git, vim, i3, gdb"
         - "os: Linux (Arch Linux, Manjaro, Ubuntu), Windows"
         - "containers: Docker"
 
@@ -264,7 +264,7 @@ params:
     # title: "Custom Name"
     items:
       - title: Optical Character Recognition Sudoku Solver
-        content: I am currently working on a Optical Character Recognition with 3 friends for an EPITA project.
+        content: I have currently worked on a Optical Character Recognition with 3 friends for an EPITA project.
         image: /images/sudoku.png
         featured:
           name: Demo

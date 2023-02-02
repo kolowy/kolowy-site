@@ -124,7 +124,7 @@ params:
         - icon: fab fa-github
           url: https://github.com/kolowy
         - icon: fab fa-linkedin
-          url: https://www.linkedin.com/in/paul-dufour-560238237/
+          url: https://www.linkedin.com/in/paul-dufour/
       customIcons:
         - icon: /images/prologin.png
           url: "https://prologin.org"

@@ -27,11 +27,11 @@ Menus:
       url: /blogs
       weight: 2
 
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 3
+        #- identifier: gallery
+        #name: Gallery
+        # title: Blog posts
+        #url: /gallery
+        #weight: 3
 
     #Dropdown menu
     # - identifier: dropdown
@@ -117,8 +117,8 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: /CV.png"
-      download: true
+      url: /cv.pdf
+      download: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
@@ -140,7 +140,7 @@ params:
       enable: true
       title: "Stuff I like :"
       items:
-        - "languages : C, C#, OCaml, ASM 68000, bash"
+        - "languages : C, C++, C#, OCaml, ASM 68000, bash"
         - "tools: git, vim, i3, gdb"
         - "os: Linux (Arch Linux, Manjaro, Ubuntu), Windows"
         - "containers: Docker"

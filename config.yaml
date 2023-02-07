@@ -86,7 +86,7 @@ params:
 
   #   darkmode:
   #     textColor:
-  #     secondaryTextColor:
+  #     secondaryTextColor:E | Chulalongkorn University
   #     backgroundColor:
   #     secondaryBackgroundColor:
   #     primaryColor:
@@ -100,7 +100,7 @@ params:
 
     menus:
       disableAbout: true
-      disableExperience: true
+      disableEducation: true
       disableEducation: true
       disableProjects: true
       disableAchievements: true
@@ -123,6 +123,8 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/kolowy
+        - icon: fab fa-gitlab
+          url: https://gitlab.com/kolowy
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/paul-dufour/
       customIcons:
@@ -140,27 +142,59 @@ params:
       enable: true
       title: "Stuff I like :"
       items:
-        - "languages : C, C++, C#, OCaml, ASM 68000, bash"
-        - "tools: git, vim, i3, gdb"
+        - "languages : C, C++, C#, bash, Python, OCaml, ASM 68000, Latex, Markdown"
+        - "tools: git, CI/CD, vim, i3, gdb"
         - "os: Linux (Arch Linux, Manjaro, Ubuntu), Windows"
         - "containers: Docker"
+        - "frameworks: Vue.js, Nuxt.js, React"
 
   # Experience
   experience:
     enable: true
-    title: "School career"
+    title: "Experience"
+    items:
+      - title: "Prologin"
+        date: "Summer 2022"
+        companyUrl: "https://prologin.org"
+        featuredLink:
+          enable: true
+          name: "Prologin"
+          url: "https://prologin.org"
+        image: /images/prologin.png
+        content: |
+          - Help to develop new tools and maintain existing ones
+          - Organization of Girls Can Code! workshop to promote woman integration in Computer Science
+          - Met with high-ranking officials to promote / develop the Prologin / Girls Can Code association and its actions
+
+
+  # Education
+  education:
+    enable: true
+    title: "Education"
     items:
       - job: "Student"
         company: "EPITA"
         school: 
-          name: "EPITA"
+          name: "Ecole Pour l’Informatique et les Techniques Avancées"
           url: "https://www.epita.fr/"
         date: "Sept 2021 - present"
         featuredLink:
           enable: true
           name: "EPITA"
           url: "https://www.epita.fr/"
-        content: "Second year of engineering studies at EPITA"
+        content: "Second year of engineering studies at EPITA (Ecole Pour l’Informatique et les Techniques Avancées)"
+
+      - job: "Student"
+        company: "Chulalongkorn University"
+        school:
+          name: "Chulalongkorn University"
+          url: https://www.chula.ac.th/en/
+        date: "Jan 2023 - present"
+        featuredLink:
+          enable: true
+          name: "Chulalongkorn University"
+          url: https://www.chula.ac.th/en/
+        content: "Exchange student at Information and Communication Engineering in Chulalongkorn University, 5 months"
 
       - job: "High School"
         company: "Marcq institution"
@@ -176,8 +210,8 @@ params:
           High school in Marcq institution.
           Baccalorea in 2021
       
-  # Education
-  education:
+  # school_project
+  school_project:
     enable: true
     index: true
     title: "School Project"
@@ -191,7 +225,7 @@ params:
           enable: true
           name: "Sigma-Vision - OCR Sudoku Solver"
           url: "https://sigma-vision.github.io/doc-hugo/"
-        content: I am currently working on a Optical Character Recognition with 3 friends for an EPITA project.
+        content: an Optical Character Recognition with 3 friends for an EPITA project.
       
       - title: "Battle Fields: Return of the Potatoes - VR Game"
         school: 
@@ -223,10 +257,11 @@ params:
           url: "https://prologin.org"
         image: /images/prologin.png
         content: |
-          I help prologin for :
+          I help prologin to :
           - organize the final
           - prepare the final
           - review the exercises of the contest
+          - create some exercices for the contest
 
       - title: "Girls Can Code! (GCC)"
         date: "Mars 2022 - present"
@@ -237,11 +272,11 @@ params:
           url: "https://girlscancode.fr"
         image: /images/GCC.png
         content: |
-          I help Girls Can Code! (GCC)
+          I help Girls Can Code! (GCC) to
           - make a static website
           - organize internships for girls
           - improve the content of the gcc courses
-          - support for the development of the next GCC site
+          - development of the next GCC site
 
 
   # Achievements

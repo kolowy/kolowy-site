@@ -1,10 +1,10 @@
-{{ if .Site.Params.experience.enable | default false }}
+{{ if .Site.Params.education.enable | default false }}
 <section id="education" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        <h3 class="text-center">{{ .Site.Params.education.title | default "Education" }}</h3>
         <div class="row justify-content-center py-5">
-            {{ $indexMenu := .Site.Params.experience.index }}
-            {{ range $index, $element := .Site.Params.experience.items }}
+            {{ $indexMenu := .Site.Params.education.index }}
+            {{ range $index, $element := .Site.Params.education.items }}
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
                     {{ if $indexMenu }}
@@ -43,27 +43,17 @@
                                     </i> 
                                 </div>
                                 {{ end }}
-                                <div class="row justify-content-around">
-                                    <div class="col-sm-6">
-                                        <div class="py-1 education-content">
-                                            {{ .content | markdownify}}
-                                        </div>
-                                        {{ if .featuredLink.enable }}
-                                        <div class="py-1">
-                                            <a href="{{ .featuredLink.url }}" class="btn">
-                                                {{ .featuredLink.name | default "Featured" }}
-                                            </a>
-                                        </div>
-                                        {{ end }}
-                                    </div>
-                                    {{ if .image }}
-                                    <div class="col-sm-6 col-md-12 col-lg-4 col-sm-6">
-                                        <div class="col-md-9 image {{ if .Site.Params.animate }}animate{{ end }} text-center">
-                                            <img src="{{ .image }}" class="img-thumbnail" style="border: none;">
-                                        </div>
-                                    </div>
-                                    {{ end }}
+                                <div class="py-1 education-content">
+                                    {{ .content | markdownify}}
                                 </div>
+
+                                {{ if .featuredLink.enable }}
+                                <div class="py-1">
+                                    <a href="{{ .featuredLink.url }}" class="btn">
+                                        {{ .featuredLink.name | default "Featured" }}
+                                    </a>
+                                </div>
+                                {{ end }}
                             </div>
                         </div>
                     </div>
@@ -74,4 +64,3 @@
     </div>
 </section>
 {{ end }}
-

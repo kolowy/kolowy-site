@@ -99,6 +99,7 @@ params:
   #   brandName: "Profile" # Brand name for the brand | default is the title variable
 
     menus:
+      disableExperience: true
       disableAbout: true
       disableEducation: true
       disableEducation: true

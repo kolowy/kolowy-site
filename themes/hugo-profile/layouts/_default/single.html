@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="{{.Site.Params.staticPath}}/css/single.css">
 
 <!-- fontawesome -->
-<script defer src="{{.Site.Params.staticPath}}/fontawesome-5/all-5.15.4.js"></script>
+<script defer src="{{.Site.Params.staticPath}}/fontawesome-6/all-6.4.2.js"></script>
 {{ end }}
 
 {{ define "title" }}
@@ -21,12 +21,18 @@
             <div class="text-center">
               {{ .Params.author }} 
               <small>|</small>
-              {{ .Date.Format "Jan 2, 2006" }}
+              {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan 2, 2006") }}
+
+              {{ if or (.Site.Params.singlePages.readTime.enable | default true) (.Params.enableReadingTime) }}
+              <span id="readingTime">
+                {{ .Site.Params.singlePages.readTime.content | default "min read" }}
+              </span>
+              {{ end }}
             </div>
           </div>
           {{ if .Params.image }}
           <div class="featured-image">
-            <img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">
+            <img class="img-fluid mx-auto d-block" src="{{ .Params.image }}" alt="{{ .Title }}">
           </div>
           {{ end }}
           <article class="page-content  p-2">
@@ -35,11 +41,11 @@
         </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-3">
-        <div class="sticky-sidebar">
+        <div id="stickySideBar" class="sticky-sidebar">
           {{ if .Params.toc | default true}}
           <aside class="toc">
               <h5>
-                Table Of Contents
+                {{ .Site.Params.terms.toc | default "Table Of Contents" }}
               </h5>
               <div class="toc-content">
                 {{.TableOfContents}}
@@ -49,7 +55,7 @@
 
           {{ if .Params.tags }}
           <aside class="tags">
-            <h5>Tags</h5>
+            <h5>{{ .Site.Params.terms.tags | default "Tags" }}</h5>
             <ul class="tags-ul list-unstyled list-inline">
               {{range .Params.tags}}
               <li class="list-inline-item"><a href="{{`tags` | absURL}}/{{.| urlize}}" target="_blank">{{.}}</a></li>
@@ -60,7 +66,7 @@
 
           {{ if .Params.socialShare | default true }}
           <aside class="social">
-            <h5>Social</h5>
+            <h5>{{ .Site.Params.terms.social | default "Social" }}</h5>
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
@@ -74,7 +80,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="mailto:?subject={{ .Title }}&amp;body=Check out this site {{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
+                  <a target="_blank" href='mailto:?subject={{ .Title }}&amp;body={{ .Site.Params.terms.emailText | default "Check out this site" }} {{ .Site.Params.hostName }}{{ .Permalink | absURL }}'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -85,11 +91,23 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        {{ template "_internal/disqus.html" . }}
+      </div>
+    </div>
   </div>
   <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
     <i class="fas fa-angle-up"></i>
   </button>
 </section>
+
+{{ if or (.Site.Params.singlePages.scrollprogress.enable | default true) (.Params.enableScrollProgress) }}
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="{{.Site.Params.staticPath}}/js/scrollProgressBar.js"></script>
+{{ end }}
 
 <script>
   var topScroll = document.getElementById("topScroll");
@@ -107,6 +125,21 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  // To set height of sticky sidebar dynamically
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar = {{ .Site.Params.navbar.stickyNavBar.enable | default false }};
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
 </script>
+
+{{ if or (.Site.Params.singlePages.readTime.enable | default true) (.Params.enableReadingTime) }}
+<script src="{{.Site.Params.staticPath}}/js/readingTime.js"></script>
+{{end}}
 
 {{ end }}

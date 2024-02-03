@@ -24,6 +24,7 @@ A high performance and mobile first hugo template for personal portfolio and blo
   - [Google Analytics](https://gohugo.io/templates/internal/#google-analytics)
 - Comment Support
   - [Disqus](https://gohugo.io/content-management/comments/)
+- Integration with [FormSpree](https://formspree.io/) for submitting "Contact me" form
 
 Technology used: Bootstrap, fontawesome 
 
@@ -39,7 +40,7 @@ Technology used: Bootstrap, fontawesome
 [For more details](https://github.com/gurusabarish/hugo-profile/wiki)
 ## Hugo theme
 
-- Install Hugo and create a site using `hugo new site my-site -f=yaml`
+- Install Hugo and create a site using `hugo new site my-site --format="yaml"`
 - Clone this repo inside your themes folder
 ```
 cd themes
@@ -60,7 +61,7 @@ For more details: [host on netlify](https://gohugo.io/hosting-and-deployment/hos
 
 # Deployment
 
-Run `hugo`. It will generate a folder called public. You can use the files inside public folder for deployment. You should delete the public folder for each time when you are using `hugo` commend.
+Run `hugo`. It will generate a folder called public. You can use the files inside public folder for deployment. You should delete the public folder for each time when you are using `hugo` command.
 
 # Issues
 

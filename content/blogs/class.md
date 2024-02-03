@@ -8,6 +8,8 @@ tags:
     - C#
 ---
 
+Written for a C# class
+
 What is a class?
 A class is like an <code>object</code>. In this example, we will consider a class <code>Person</code>.
 We can add <code>attributes</code> to the class. Attributes are sort of variables that are defined in the class and belong to the object they are defined in. For example, for a class <code>Person</code>, we can create the attributes <i>name</i> and <i>age</i>, that  will contain the person's information.

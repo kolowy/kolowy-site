@@ -34,11 +34,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 2
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 3
+        # - identifier: gallery
+        #  name: Gallery
+        #  title: Blog posts
+        #  url: /gallery
+        #  weight: 3
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -170,7 +170,7 @@ params:
   # Experience
   experience:
     enable: true
-    title: "Internship and Organization"
+    title: "Internship"
     items:
       - job: "Assistant C Dièse Caml"
         company: "EPITA"
@@ -384,38 +384,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-
-
-      #   association:
-      #     enable: true
-      #     title: "Associations"
-      #     items:
-      #       - title: "Prologin"
-      #         date: "Mars 2022 - present"
-      #         companyUrl: "https://prologin.org"
-      #         featuredLink:
-      #           enable: true
-      #           name: "Prologin"
-      #           url: "https://prologin.org"
-      #         image: /images/prologin.png
-      #         content: |
-      #           I help prologin to :
-      #           - organize the final
-      #           - prepare the final
-      #           - review the exercises of the contest
-      #           - create some exercices for the contest
-      # 
-      #       - title: "Girls Can Code! (GCC)"
-      #         date: "Mars 2022 - present"
-      #         companyUrl: "https://girlscancode.fr"
-      #         featuredLink:
-      #           enable: true
-      #           name: "Girls Can Code!"
-      #           url: "https://girlscancode.fr"
-      #         image: /images/GCC.png
-      #         content: |
-      #           I help Girls Can Code! (GCC) to
-      #           - make a static website
-      #           - organize internships for girls
-      #           - improve the content of the gcc courses
-      #           - development of the next GCC site

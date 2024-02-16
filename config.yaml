@@ -157,12 +157,12 @@ params:
     title: "About Me"
     image: "/images/moi.png"
     content: |-
-      Engineering studies at EPITA. Computer Science enthusiast since I am 13 years old. I always want to discover new things. I have a strong interest in the intersection of technology and art.
+      Engineering studies at EPITA. Computer Science enthusiast since I am 13 years old. I always want to discover new things. I have a strong interest in the intersection of technology.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "languages: C - bash - C++ - C# - bash - Python - OCaml - ASM"
+        - "languages: C - C++ - C# - bash - Python - OCaml - ASM - Java"
         - "tools: vim - git - CI/CD - i3 - gdb - Docker - terraform - ansible - Nix"
         - "os: Linux (Arch Linux, Manjaro, Ubuntu) - Windows"
         - "frameworks: Vue.js - Nuxt.js - React"
@@ -203,7 +203,7 @@ params:
         content: |
           - Help to develop new tools and maintain existing ones
           - Organization of Girls Can Code! workshop to promote woman integration in Computer Science
-          - Met with high-ranking officials to promote / develop the Prologin / Girls Can Code association and its actions
+          - Met with high-ranking officials to promote / develop Prologin / Girls Can Code association and its actions
 
 
   # Education
@@ -244,7 +244,7 @@ params:
     content: |
       Secretary of the association, I take care of new members and the association in general.
 
-      I also manage part of the prologin infrastructure with ansible and terraform.
+      I also manage part of Prologin infrastructure with ansible and terraform.
 
 
       [Prologin Website](https://prologin.org)

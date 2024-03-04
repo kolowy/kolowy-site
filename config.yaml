@@ -240,26 +240,26 @@ params:
     enable: true
     title: "Organization"
     subtitle: "Prologin"
-    items:
+    index: true 
     content: |
-      Secretary of the association, I take care of new members and the association in general.
-
-      I also manage part of Prologin infrastructure with ansible and terraform.
-
-
-      [Prologin Website](https://prologin.org)
-
-      [Girls Can Code! Website](https://girlscancode.fr)
+         Secretary of the association, I take care of new members and the association in general.
+         I also manage part of Prologin infrastructure with ansible and terraform.
+            - [Prologin Website](https://prologin.org)
+            - [Girls Can Code! Website](https://girlscancode.fr)
     skills:
       enable: true
-      title: "I also help Prologin to :"
+      title: |
+
+
+        Here are a few technologies I've been working with recently:
       items:
-        - Organize and prepare the final
-        - Review and create the exercises of the contest
-        - create some exercices for the contest
-        - Organize internships for girls
-        - Improve the content of the gcc courses
-        - "Development of the new GCC site : https://dev.girlscancode.fr"
+        - Management of the association and registration of members.
+        - Girls Can Code! workshop to promote the integration of women in Computer Science
+        - Create a new website for Girls Can Code!
+        - Met with high-ranking officials to promote and develop the association and its actions
+        - Organization of a computer science contest where students under 21 have to solve problemsand challenges.
+        - Maintaining the association’s infrastructure, develop new tools and maintain existing ones
+        - Help in implementing a modern, code-compliant infrastructure with containerization of internal and external services.
 
   # Achievements
   achievements:

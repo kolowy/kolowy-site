@@ -132,7 +132,6 @@ params:
     title: "Paul Dufour"
     subtitle: "Engineering studies at EPITA"
     content: "Engineering studies at EPITA. Computer Science enthusiast since I am 13 years old. I always want to discover new things"
-    image: /images/moi.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
